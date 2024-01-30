@@ -5,7 +5,7 @@
 }
 
 body > header {
-    background-color: steelblue;
+    background-color: black;
     padding: 16px 0;
     color: white;
 }
@@ -89,4 +89,28 @@ section h2 {
 
 #sports .articles article a {
     background-color: rgb(20, 138, 14);
+}
+
+#economy {
+    background-color: rgba(245, 245, 9, 0.727)
+}
+
+#economy .articles article a {
+    background-color: rgb(246, 164, 22);
+}
+
+#tecnology {
+    background-color: rgba(120, 82, 223, 0.412)
+}
+
+#tecnology .articles article a {
+    background-color: rgba(251, 6, 6, 0.61);
+}
+
+#entertainment {
+    background-color: rgba(9, 241, 245, 0.727)
+}
+
+#entertainment .articles article a {
+    background-color: rgba(246, 22, 201, 0.484);
 }
