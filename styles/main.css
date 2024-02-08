@@ -74,3 +74,7 @@ ul li {
     font-weight: bold;
     cursor: pointer;
 }
+
+.checked {
+    text-decoration: line-through;
+}
