@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Exercicio com Plugins jquery</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de cadastro</h1>
+        </header>
+        <form id="register-form">
+            <input type="text" placeholder="Nome completo">
+            <input type="email" placeholder="E-mail">
+            <input id="id-tel" type="tel" placeholder="Telefone com DDD">
+            <input id="id-cpf" type="tel" placeholder="CPF">
+            <input type="text" placeholder="Endereço completo">
+            <input id="id-cep" type="tel" placeholder="CEP">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/main.js"></script>
+</html>
