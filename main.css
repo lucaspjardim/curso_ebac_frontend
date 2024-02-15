@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+}
+
+.container form button{
+    margin-top: 8px;
+}
+
+form {
+    color: white;
+}
