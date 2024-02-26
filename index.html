@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha cafeteria</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top shadow p-1" id="menu-nav">
+        <div class="container">
+            <h1 class="section-title-2 navbar-brand m-0 fw-bold fs-1">Cafeteria</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li  class="nav-item">
+                        <a href="#about" class="nav-link active">
+                          <i class="fa-solid fa-mug-hot p-1"></i>
+                          Sobre a cafeteria
+                        </a>
+                    </li>
+                    <li  class="nav-item">
+                        <a href="#menu" class="nav-link">
+                          <i class="fa-solid fa-utensils p-1"></i>
+                          Menu</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a href="#news" class="nav-link">
+                          <i class="fa-solid fa-newspaper p-1"></i>
+                          Noticias</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a href="#contact" class="nav-link">
+                          <i class="fa-solid fa-phone p-1"></i>
+                          Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="carousel-images" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/car/slide1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/car/slide2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/car/slide3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-images" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-images" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+    </section>
+    <div data-bs-spy="scroll" data-bs-target="menu-nav">
+      <section id="about">
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="images/frente.jpg" class="d-block w-100 rounded" alt="">
+              </div>
+              <div class="col-md-7 mt-3 mt-md-0">
+                <h2 class="section-title">Sobre <span>o espaço</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat officiis a cumque possimus doloremque, tempora iusto ea veritatis et iure quos eos. Libero autem quia tenetur numquam repudiandae veritatis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="p-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title-2 text-center mt-3 mb-5">
+              Nosso <span>cardápio</span>
+            </h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-menu">
+                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-quentes" class="fw-bold text-start nav-link text-colored active">Bebidas quentes</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-geladas" class="fw-bold text-start nav-link text-colored ">Bebidas geladas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored ">Entradas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#salgados" class="fw-bold text-start nav-link text-colored ">Salgados</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#doces" class="fw-bold text-start nav-link text-colored ">Doces</button>
+              </nav>
+            </aside>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="bebidas-quentes">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img class="card-img-top" src="images/menu/expresso.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Espresso</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img class="card-img-top" src="images/menu/cappucino.webp" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Cappucino</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img class="card-img-top" src="images/menu/macchiato.webp" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Macchiato</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img class="card-img-top" src="images/menu/ristretto.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Ristretto</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="bebidas-geladas">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img class="card-img-top" src="images/menu/agua.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Agua mineral</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img class="card-img-top" src="images/menu/coca.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Coca-cola lata</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img class="card-img-top" src="images/menu/suco.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Suco de laranja</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="entradas">
+              <div class="row align-items-start">
+                <div class="col-md-3">
+                  <div class="card">
+                    <img class="card-img-top" src="images/menu/fritas.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Batatas fritas</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img class="card-img-top" src="images/menu/cebola.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Aneis de cebola</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img class="card-img-top" src="images/menu/salada.webp" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Salada tropical</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="salgados">
+            <div class="row align-items-start">
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/misto.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Misto quente</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/coxinha.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Coxinha de frango</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/hamburguer.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Hambúrguer caseiro</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="tab-pane" id="doces">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/torta.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Fatia de torta</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/quindim.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Quindim</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="images/menu/pudim.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Pudim</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">Ultimas notícias</h2>
+          </div>
+          <div class="row mt-4">
+            <div class="card-group gap-3">
+              <div class="card">
+                <img class="card-img-top" src="images/noticia1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Brasil exporta 3,961 milhões de sacas de café em janeiro</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat perferendis at facilis illo! Vero, possimus?</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Notícia criada em: 21/02/2024</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/noticia2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Como nasce um novo café</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque porro illo eos ea, voluptatibus labore aliquam veritatis explicabo, totam itaque reprehenderit repellat delectus mollitia!</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Notícia criada em: 18/02/2024</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/noticia3.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Mercado do café - 15 de Fevereiro de 2024</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam cumque ut quas, laboriosam, facilis consequatur accusamus, sit cupiditate quis eligendi.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Notícia criada em: 15/02/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title-2 text-center">Entre em contato</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <p class="error"></p>
+              <form id="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-bold text-colored">Seu nome</label>
+                  <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label fw-bold text-colored">Seu telefone</label>
+                  <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                  <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success fw-bold">Enviar</button>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4">
+                  <i class="fa-solid fa-heart"></i>
+                  Nos siga nas redes sociais</h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="text-colored fa-brands fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5 ms-1 me-1">
+                    <a href="#"></a>
+                    <i class="text-colored fa-brands fa-instagram"></i>
+                  </li>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="text-colored fa-brands fa-whatsapp"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Endereço</h3>
+              </div>
+              <p>
+                Rua  dos Bobos, nº 0 - Bairro do Povo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</body>
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script src="lib/jquery.mask.min.js"></script>
+<script src="js/main.js"></script>
+</html>
