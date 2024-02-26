@@ -1,0 +1,67 @@
+@use '../config/variables';
+@use '../config/reset';
+@use '../sections/products';
+
+body {
+    background-color: #f5f6fa;
+    font-family: variables.$fontBody;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variables.$bodyColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: variables.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variables.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
