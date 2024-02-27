@@ -1,9 +1,11 @@
+@use 'variables';
+
 body {
-    font-family: Roboto, sans-serif;
+    font-family: variables.$fontDefault;
 }
 
 .navbar {
-    background-color: #262625;
+    background-color: variables.$navColor;
 }
 
 #menu-nav .nav .nav-link.active {
@@ -24,41 +26,42 @@ body {
 .carousel-item {
     height: 500px;
     overflow: hidden;
-}
 
-.carousel-item img {
-    object-fit: cover; 
-    height: 100%;
-    width: 100%;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .carousel-indicators [data-bs-target] {
     width: 10px;
-    height: 10px; 
-    border-radius: 100%; 
+    height: 10px;
+    border-radius: 100%;
 }
 
 .section-title {
-    font-family: Bebas Neue, sans-serif;
+    font-family: variables.$fontTitle;
     font-weight: bold;
     font-size: 50px;
     color: black;
 }
 
 .section-title-2 {
-    font-family: Bebas Neue, sans-serif;
+    font-family: variables.$fontTitle;
     font-weight: bold;
     font-size: 50px;
     color: white;
 }
 
 #about {
-    background-color: #e6d9cd;
+    background-color: variables.$primaryColor;
 }
 
 .text-colored {
-    color: #262625;
+    color: variables.$textColor;
 }
+
 .nav-menu button {
     text-transform: uppercase;
 }
@@ -71,21 +74,22 @@ body {
 .nav-menu .nav-link:hover {
     color: red;
 }
-#menu {
-    background-color: #55473a;
-}
 
-#menu .card {
-    border: 2px solid black;
-    box-shadow: 10px 10px 5px black;
+#menu {
+    background-color: variables.$secondaryColor;
+
+    .card {
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px black;
+    }
 }
 
 #news {
-    background-color: #e6d9cd;
-}
+    background-color: variables.$primaryColor;
 
-#news .card {
-    border: 1px solid grey
+    .card {
+        border: 1px solid grey;
+    }
 }
 
 .social-links li {
@@ -98,7 +102,7 @@ body {
 }
 
 #contact {
-    background-color: #55473a;
+    background-color: variables.$primaryColor;
 }
 
 .error {
@@ -114,7 +118,7 @@ body {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: variables.$mobile) {
     .carousel-item img {
         height: 280px;
     }
@@ -127,12 +131,10 @@ body {
     }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px){
-    @media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (min-width: variables.$tabletMin) and (max-width: variables.$tabletMax){
        #menu .col-md-3 {
         flex: 0 0 50%;
         max-width: 50%;
         margin-bottom: 20px;
       }
     }
-}
