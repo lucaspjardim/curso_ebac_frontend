@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                     },
                     {
                         match: 'JS_ADDRESS',
-                        replacemnt: '../src/scripts/main.js'
+                        replacemnt: './src/scripts/main.js'
                     }
                 ]
             },
@@ -53,11 +53,11 @@ module.exports = function(grunt) {
             options: {
                 patterns: [
                     {
-                        match: 'ENDEREÇO_DO_CSS',
+                        match: 'CSS_ADDRESS',
                         replacement: './styles/main-min.css'
                     },
                     {
-                        match: 'ENDEREÇO_DO_JS',
+                        match: 'JS_ADDRESS',
                         replacement: './scripts/main-min.js'
                     }
                 ]
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin')
     grunt.loadNpmTasks('grunt-contrib-clean')
     grunt.loadNpmTasks('grunt-contrib-uglify')
-
+    
     grunt.registerTask('default', ['watch'])
     grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'uglify', 'clean'])
 
